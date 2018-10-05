@@ -2,5 +2,83 @@
 
 /*Ok, I'll add the fonts*/
 body{
-  font-family: 'Fondamento', 'Garamond', serif;
+  font-family: 'Almendra', 'Garamond', serif;
+  color:#5b2f10;
+  font-size: medium;
+  background-image:url(images/BooksDark.jpg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  margin:0;
+  padding:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Fondamento', 'Apple Chancery', 'Garamond', serif;
+  color:#990000;
+}
+
+a{
+  text-decoration:none;
+  color:#990000;
+}
+
+p{
+
+}
+
+header{
+  width:100%;
+  height:20px;
+  background-color: rgba(0,0,0,0.8);
+  margin:0;
+  padding:10px 0 10px 0;
+}
+
+footer{
+  width:100%;
+  height:20px;
+  background-color:#000;
+  color:#ccc;
+  text-align:right;
+  margin:0;
+  background-color: rgba(0,0,0,0.8);
+  padding:10px 0 10px 0;
+  position: bottom;
+}
+
+h1{
+  font-size:1.5em;
+  line-height:0.5em;
+}
+
+#topnav{
+}
+
+#timeline{
+  width:45%;
+  float:left;
+}
+
+#workslist{
+  padding-left:50%;
+}
+
+.work{
+  background-color: rgba(255,236,179,0.6);
+  height: 150px;
+  margin:20px 50px 20px 20px;
+  padding:1px 5px 5px 100px;
+  font-size:1.1em;
+}
+
+.work:hover{
+  background-color: rgba(255,245,200,0.7);
+}
+
+.description::first-letter{
+  font-family:'UnifrakturMaguntia', cursive;
+  font-size:1.75em;
+  line-height:0.8em;
+  float:left;
 }
