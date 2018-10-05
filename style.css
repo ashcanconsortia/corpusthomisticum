@@ -24,7 +24,7 @@ a{
 }
 
 p{
-
+  margin:10px;
 }
 
 header{
@@ -60,8 +60,19 @@ h1{
   float:left;
 }
 
+#smalltimeline{
+  width:25%;
+  float:left;
+}
+
 #workslist{
   padding-left:50%;
+}
+
+#content{
+  margin-left:30%;
+  margin-right:5%;
+  background-color: rgba(255,236,179,0.8);
 }
 
 .work{
@@ -76,9 +87,24 @@ h1{
   background-color: rgba(255,245,200,0.7);
 }
 
-.description::first-letter{
+p.description::first-letter,p.lang1::first-letter,p.lang2::first-letter{
   font-family:'UnifrakturMaguntia', cursive;
   font-size:1.75em;
   line-height:0.8em;
   float:left;
+}
+
+.trans-align{
+  margin:0px;
+  padding:0px;
+  vertical-align:top;
+}
+
+p.lang1{
+  width:45%;
+  float:left;
+}
+
+p.lang2{
+  padding-left:55%;
 }
