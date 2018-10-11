@@ -2,9 +2,10 @@
 
 /*Ok, I'll add the fonts*/
 body{
-  font-family: 'Garamond', serif;
-  color:#331a00;
+  font-family: 'Cormorant Garamond','Garamond', serif;
+  color:#ccc;
   font-size: medium;
+  line-height:120%;
   background-image:url(images/BooksDark.jpg);
   background-repeat:no-repeat;
   background-attachment:fixed;
@@ -14,7 +15,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Fondamento', 'Apple Chancery', 'Garamond', serif;
+  font-family: 'Cinzel', 'Garamond', serif;
   text-align:center;
   line-height:0.5em;
 }
@@ -22,32 +23,33 @@ h1,h2,h3,h4,h5,h6{
 h1{
   font-size:2em;
   line-height:0.5em;
-  color:#cc3300;
+  color:#be0f34;
   clear:both;
 }
 
 h2{
   font-size:1.5em;
   font-variant:small-caps;
-  color:#4d2800;
+  color:#fff;
 }
 
 h3{
   font-size:1.3em;
+  color:#aaa;
 }
 
 h4{
-  font-family:'Garamond', serif;
+  font-family:'Cormorant Garamond','Garamond', serif;
   font-size:1.3em;
   font-variant:small-caps;
-  font-weight:normal;
+  font-weight:bold;
   text-align:left;
   padding-left:5px;
-  color:#992600;
+  color:#eee;
 }
 
 h5{
-  font-family:'Garamond', serif;
+  font-family:'Cormorant Garamond','Garamond', serif;
   font-size:1em;
   font-weight:bold;
   text-align:left;
@@ -55,7 +57,7 @@ h5{
 }
 
 h5{
-  font-family:'Garamond', serif;
+  font-family:'Cormorant Garamond','Garamond', serif;
   font-size:1em;
   font-style:italic;
   font-weight:normal;
@@ -65,11 +67,11 @@ h5{
 
 a{
   text-decoration:none;
-  color:#cc3300;
+  color:#be0f34;
 }
 
 a:hover{
-  color:#e63900;
+  color:#8f0b27;
 }
 
 a img{
@@ -91,13 +93,13 @@ p{
 }
 
 select{
-  background-color: rgba(255,249,230,0.8);
-  background-image:url('images/icons-png/caret-bottom-1x.png');
-  font-family: 'Garamond', serif;
+  background-color:transparent;
+  font-family: 'Cormorant Garamond','Garamond', serif;
   font-size:1.2em;
   padding-right:30px;
-  color:#331a00;
-  border:2px #331a00 solid;
+  margin:0px;
+  color:#ccc;
+  border:1px #ccc solid;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -105,10 +107,8 @@ select{
 
 #mainheader{
   width:100%;
-  height:20px;
-  background-color: rgba(26,13,0,0.8);
+  background-color: rgba(0,33,71,0.9);
   margin:0;
-  padding:10px 0 10px 0;
   position:fixed;
   left:0;
   top:0;
@@ -117,20 +117,26 @@ select{
 
 #mainfooter{
   width:100%;
-  height:20px;
-  background-color:#000;
+  background-color: rgba(0,33,71,0.9);
   color:#ccc;
   text-align:right;
   margin:0;
-  background-color: rgba(26,13,0,0.8);
-  padding:10px 0 10px 0;
   position:fixed;
   bottom:0;
   left:0;
   z-index:2;
 }
 
-#topnav,.langnav{
+#title a{
+  color:#ccc;
+  font-family: 'Cinzel', 'Garamond', serif;
+  font-size:1.5em;
+  float:right;
+  padding-right:20px;
+  padding-top:10px;
+}
+
+.langnav{
   float:right;
   text-align:right;
   vertical-align:top;
@@ -140,24 +146,20 @@ select{
 #topnav{
   float:left;
   text-align:left;
+  vertical-align:top;
+  margin:0px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:30px;
+}
+
+.navlabel{
+  font-size:1.2em;
 }
 
 .langnav img{
   padding:5px;
   float:right;
-}
-
-.langnav select{
-  background:transparent;
-}
-
-#timeline{
-  width:45%;
-  float:left;
-}
-
-#workslist{
-  padding-left:50%;
 }
 
 #content{
@@ -169,7 +171,10 @@ select{
 }
 
 .work{
-  background-color: rgba(255,249,230,0.8);
+  background-image:url(images/BooksBlur.jpg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
   height:170px;
   margin:20px 50px 20px 20px;
   padding:1px 5px 5px 100px;
@@ -179,12 +184,21 @@ select{
   background-color: rgba(255,249,230,0.95);
 }
 
+.chron-row{
+  display:table-row;
+}
+
+.chronological-timeline{
+  display:table-cell;
+  width:40%;
+}
+
 .description{
   font-family
 }
 
 p.text::first-letter{
-  font-family:'Fondamento', cursive;
+  font-family:'Cinzel', 'Garamond', serif;
   font-size:1.3em;
   line-height:0.5em;
   float:left;
@@ -205,11 +219,10 @@ p.text::first-letter{
   vertical-align:top;
   padding:0px;
   margin:0px;
-  background-color: rgba(255,249,230,0.8);
-}
-
-.lang{
-  margin-left
+  background-image:url(images/BooksBlur.jpg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
 }
 
 .reader-timeline,.reader-timeline1{
@@ -230,32 +243,28 @@ p.text::first-letter{
   bottom:0;
   width:8px;
   left:200px;
-  background-color:#992600;
+  background-color:#8f0b27;
   z-index:0;
 }
 
 #timeline-brown{
   left:210px;
-  background-color:#331a00;
+  background-color:#002147;
 }
 
 #timeline-gold{
   left:220px;
-  background-color:#d58800;
-}
-
-#timeline1-red{
-
+  background-color:#407bbf;
 }
 
 #timeline1-brown{
   left:300px;
-  background-color:#331a00;
+  background-color:#002147;
 }
 
 #timeline1-gold{
   left:400px;
-  background-color:#d58800;
+  background-color:#407bbf;
 }
 
 .dot-red,.dot-brown,.dot-gold,.dot-gold1{
@@ -264,23 +273,23 @@ p.text::first-letter{
   border-radius:50%;
   margin-left:60px;
   margin-top:30px;
-  border:8px #992600 solid;
+  border:8px #8f0b27 solid;
   overflow:hidden;
   z-index:1;
   position:relative;
 }
 
 .dot-brown{
-  border-color:#331a00;
+  border-color:#002147;
   margin-left:70px;
 }
 
 .dot-gold{
-  border-color:#d58800;
+  border-color:#407bbf;
   margin-left:80px;
 }
 
 .dot-gold1{
   margin-left:260px;
-  border-color:#d58800;
+  border-color:#407bbf;
 }
