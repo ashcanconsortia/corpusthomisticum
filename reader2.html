@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Corpus Thomisticum</title>
   <meta name="description" content="Corpus Thomisticum visualization project.">
-  <meta name="author" content="AshcanConsortia/RoxArten">
+  <meta name="author" content="AshcanConsortia">
 
   <link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -40,6 +40,7 @@
       </div>
       <div class="lang1">
         <div class="langnav">
+          <span class="navlabel">Language:</span>
           <select>
            <option value="chronological">Latin</option>
            <option value="idea map">English</option>
@@ -54,10 +55,21 @@
       </div>
       <div class="lang2">
         <div class="langnav">
-          <select>
-            <option value="idea map">English</option>
-            <option value="chronological">Latin</option>
+          <span class="navlabel">Size:</span>
+          <select id = "font-size-menu" onChange="fontMenu()">
+            <option value="0.5em">50%</option>
+            <option value="0.75em">75%</option>
+            <option value="1em" selected>100%</option>
+            <option value="1.25em">125%</option>
+            <option value="1.5em">150%</option>
+            <option value="1.75em">175%</option>
+            <option value="2em">200%</option>
           </select>
+          <span class="navlabel">Language:</span>
+          <select>
+           <option value="chronological">Latin</option>
+           <option value="idea map" selected>English</option>
+         </select>
         </div>
         <h1>Summa Theologica</h1>
         <h2>Foreward</h2>
