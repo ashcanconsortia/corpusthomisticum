@@ -2,6 +2,9 @@
 
 ## Video Link:
 
+https://www.youtube.com/watch?v=ZUNTdIWTJ60
+(Sorry for talking like a speedy YouTuber, I had a lot I wanted to say in 2 minutes!)
+
 ## In This Repo:
 
 * Design Documents folder has the sketches/layouts that I started with (not actual site images) so isn't needed for viewing the HTML pages.
