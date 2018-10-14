@@ -4,6 +4,8 @@ function navMenu(){
 }
 
 //font size
-//var menu = document.getElementById("menu");
-//span.style.fontSize = "25px";
-//span.innerHTML = "String";
+function fontMenu(){
+  var choice = document.getElementById("font-size-menu").value;
+  var textbox = document.getElementById("content");
+  textbox.style.fontSize = choice;
+}

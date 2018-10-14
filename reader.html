@@ -22,7 +22,7 @@
       </select>
       <span class="navlabel">:</span>
       <select>
-       <option value="section">Summa Theologica</option>
+       <option value="section" selected>Summa Theologica</option>
        <option value="section">Summa Contra Gentiles</option>
       </select>
     </nav>
@@ -40,6 +40,17 @@
       </div>
       <div class="lang1">
         <div class="langnav">
+          <span class="navlabel">Size:</span>
+          <select id = "font-size-menu" onChange="fontMenu()">
+            <option value="0.5em">50%</option>
+            <option value="0.75em">75%</option>
+            <option value="1em" selected>100%</option>
+            <option value="1.25em">125%</option>
+            <option value="1.5em">150%</option>
+            <option value="1.75em">175%</option>
+            <option value="2em">200%</option>
+          </select>
+          <span class="navlabel">Language:</span>
           <select>
            <option value="chronological">Latin</option>
            <option value="idea map">English</option>
